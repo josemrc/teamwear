@@ -1,0 +1,107 @@
+[
+    {
+        "type": "shirts",
+        "sizes": [
+            {
+                "id": "s",
+                "name": "Small",
+                "description": "Small (Chest: ...)"
+            },
+            {
+                "id": "m",
+                "name": "Medium",
+                "description": "Medium (Chest: ...)"
+            },
+            {
+                "id": "l",
+                "name": "Large",
+                "description": "Large (Chest: ...)"
+            },
+            {
+                "id": "xl",
+                "name": "X Large",
+                "description": "Extra Large (Chest: ...)"
+            },
+            {
+                "id": "2xl",
+                "name": "2X Large",
+                "description": "2Extra Large (Chest: ...)"
+            },
+            {
+                "id": "3xl",
+                "name": "3X Large",
+                "description": "3Extra Large (Chest: ...)"
+            }
+        ]
+    },
+    {
+        "type": "shorts",
+        "sizes": [
+            {
+                "id": "s",
+                "name": "Small",
+                "description": "Small (Chest: ...)"
+            },
+            {
+                "id": "m",
+                "name": "Medium",
+                "description": "Medium (Chest: ...)"
+            },
+            {
+                "id": "l",
+                "name": "Large",
+                "description": "Large (Chest: ...)"
+            },
+            {
+                "id": "xl",
+                "name": "X Large",
+                "description": "Extra Large (Chest: ...)"
+            },
+            {
+                "id": "2xl",
+                "name": "2X Large",
+                "description": "2Extra Large (Chest: ...)"
+            },
+            {
+                "id": "3xl",
+                "name": "3X Large",
+                "description": "3Extra Large (Chest: ...)"
+            }
+        ]
+    },
+    {
+        "type": "socks",
+        "sizes": [
+            {
+                "id": "s",
+                "name": "Small",
+                "description": "Small (Chest: ...)"
+            },
+            {
+                "id": "m",
+                "name": "Medium",
+                "description": "Medium (Chest: ...)"
+            },
+            {
+                "id": "l",
+                "name": "Large",
+                "description": "Large (Chest: ...)"
+            },
+            {
+                "id": "xl",
+                "name": "X Large",
+                "description": "Extra Large (Chest: ...)"
+            },
+            {
+                "id": "2xl",
+                "name": "2X Large",
+                "description": "2Extra Large (Chest: ...)"
+            },
+            {
+                "id": "3xl",
+                "name": "3X Large",
+                "description": "3Extra Large (Chest: ...)"
+            }
+        ]
+    }
+]

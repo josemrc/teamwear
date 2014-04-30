@@ -1,0 +1,54 @@
+[
+    {
+        "id": "sublimada_pantalon_2piezas",
+        "name": "Sublimada Pantalón 2piezas",
+        "description": "descripcion: Sublimada Pantalón 2piezas",
+        "imageIcon": "img/santin/",
+        "imageUrl": "img/santin/sublimada_pantalon_2piezas.png",
+        "brand": "Santin",
+        "colors": [
+                {
+                    "name": "Royal",
+                    "code": "2060a0",
+                    "imageUrl": "img/santin/sublimada_pantalon_2piezas_2060a0.png"
+                },
+                {
+                    "name": "Yello",
+                    "code": "fafa00",
+                    "imageUrl": "img/santin/sublimada_pantalon_2piezas_fafa00.png"
+                }
+        ],        
+        "princes": {
+            "individual": 25.5,
+            "mas de 7": 205.5,
+            "mas de 10": 235.5,
+            "mas de 15": 305.5
+        }
+    },
+    {
+        "id": "sublimada_pantalon_6piezas_elastano",
+        "name": "Sublimada Pantalón 6piezas Elastano",
+        "description": "descripcion: Sublimada Pantalón 6piezas Elastano",
+        "imageIcon": "img/santin/",
+        "imageUrl": "img/santin/sublimada_pantalon_6piezas_elastano.png",
+        "brand": "Santin",
+        "colors": [
+                {
+                    "name": "Royal",
+                    "code": "2060a0",
+                    "imageUrl": "img/santin/sublimada_pantalon_6piezas_elastano_2060a0.png"
+                },
+                {
+                    "name": "Yello",
+                    "code": "fafa00",
+                    "imageUrl": "img/santin/sublimada_pantalon_6piezas_elastano_fafa00.png"
+                }
+        ],        
+        "princes": {
+            "individual": 25.5,
+            "mas de 7": 205.5,
+            "mas de 10": 235.5,
+            "mas de 15": 305.5
+        }
+    }
+]

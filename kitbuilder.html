@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Kit Builder - TR teamwear</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.steps.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes/blitzer/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="css/jquery.qtip.min.css">
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/jquery.steps.min.js"></script>
+    <script src="js/builder.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/jquery.qtip.min.js"></script>
+
+    <script>
+        var globalOrder = new Object();
+
+        // Init objects
+        $(document).ready(function() {
+
+
+            // develop steps conditions
+            $("#wizard").steps({
+                headerTag: "h2",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                onStepChanging: function (event, currentIndex, newIndex)
+                {
+                    // First step: Building
+                    if (currentIndex === 0 && newIndex === 1)
+                    {
+                        console.log("First step: Building");
+                        // Shirt and short have been selected
+                        if ( $(".selection .shirts").is(':empty') || $(".selection .shorts").is(':empty') ) {
+                            //return false;
+                        }
+                    }
+                    return true;
+                },
+                onStepChanged: function (event, currentIndex, priorIndex)
+                {
+                    // Third step: Player custom
+                    if (currentIndex === 2 && priorIndex === 1)
+                    {
+                        console.log("Third step: Player custom");
+
+                        // create Player Customisation step only one time
+                        if ( $("#player-custom").is(':empty') ) {
+                            createPlayerCustom();
+                        }
+                                           
+                    }
+                }
+
+            });
+
+            // create Building step
+            initDesign();
+        });
+    </script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<header>
+    <h1>Thinking Rugby TeamWear</h1>
+    <p>Proporcionamos todo lo necesario para la equipación de su club. Diversos modelos de camisetas, pantalones, proteciones y artículos de entrenamiento. Así mismo, permitimos la realización de las impresiones necesarias de su club: escudo de equipo, logos de patrocinadores, dorsales, nombres...</p>
+    <p>Diseña su equipación, enviándonos un email a shop@thinkingrugby.com, nos ofrece la posibilidad de presupuestarle lo que desea.</p>
+    <p>Pedido mínimo: 20 unidades.</p>
+    </p>
+</header>
+
+<div id="container" class="content">
+    <h1>Kit Builder - Thinking Rugby TeamWear</h1>
+    <div id="wizard">
+        <h2>Building</h2>
+        <section id="step-building">
+            <section id="building">
+                <div class="nav">
+                    <div class="nav shirts"></div>
+                    <div class="nav shorts"></div>
+                    <div class="nav socks"></div>                    
+                </div>
+                <div class="kit ui-widget ui-widget-content ui-corner-all">
+                    <div class="header ui-widget-header ui-corner-tr ui-corner-tl">Kit selection</div>
+                    <div class="content"></div>
+                </div>
+                <div class="selection ui-widget ui-widget-content ui-corner-all">                    
+                    <div class="header ui-widget-header ui-corner-tr ui-corner-tl">Your selection</div>
+                    <div class="selection shirts required"></div>
+                    <div class="selection shorts required"></div>
+                    <div class="selection socks"></div>
+                </div>
+            </section>    
+        </section>
+
+        <h2>Team Customisation</h2>
+        <section id="step-team-custom">
+            <section id="team-custom"></section>
+        </section>
+
+        <h2>Player Customisation</h2>
+        <section id="step-player-custom">
+            <section id="player-custom"></section>
+        </section>
+
+        <h2>Confirmation</h2>
+        <section id="step-confirmation">
+            <section id="confirmation"></section>
+        </section>
+    </div>
+</div>
+</body>
+</html>
